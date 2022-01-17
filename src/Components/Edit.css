@@ -16,20 +16,7 @@ input{
 }
 
 .dateContainer{
-    margin-left:2rem;
     width:41vw;
     gap:2rem;
-    align-items:center;
     display:flex;
-}
-
-.dateStart,.dateEnd{
-    box-sizing: border-box;
-    margin:0 2vw 0 0;
-    width:10vw;
-    flex:content;
-}
-
-.delBtn{
-    margin-right:12vw;
 }

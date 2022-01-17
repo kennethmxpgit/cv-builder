@@ -19,11 +19,11 @@ a {
 
 #header{
   height:6vh;
-  font-size:1.25rem;
+  font-size:3vh;
 }
 #footer{
   height:4vh;
-  font-size:0.75rem;
+  font-size:1.7vh;
   color:white;
 }
 
@@ -34,10 +34,13 @@ a {
 }
 
 #edit{
-  width:50%;
+  width:50vw;
+  height:90vh;
   overflow:auto;
 }
+
 #preview{
-  background-color:lightgrey;
-  width:50%;
+  background-color: lightgray;
+  width:50vw;
+  height:90vh;
 }
