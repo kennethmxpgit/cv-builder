@@ -3,6 +3,11 @@
   margin:0;
 }
 
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 #header,#footer{
   box-sizing:border-box;
   background-color:rgb(42, 42, 42);
@@ -15,21 +20,24 @@
 #header{
   height:6vh;
   font-size:1.25rem;
-
 }
 #footer{
   height:4vh;
   font-size:0.75rem;
+  color:white;
 }
 
 #content{
+  box-sizing: border-box;
   height:90vh;
   display:flex;
 }
 
 #edit{
-  width:70%;
+  width:50%;
+  overflow:auto;
 }
 #preview{
-  width:30%;
+  background-color:lightgrey;
+  width:50%;
 }

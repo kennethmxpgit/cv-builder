@@ -1,15 +1,35 @@
 .bigLabel, .label{
     margin-left:2rem;
+    margin-top:0.5rem;
 }
 
 .bigLabel{
     font-size:2.3rem;
 }
 .label{
-
+    margin-top:0.25rem;
 }
 
 input{
     margin-left:2rem;
     width:40vw;
+}
+
+.dateContainer{
+    margin-left:2rem;
+    width:41vw;
+    gap:2rem;
+    align-items:center;
+    display:flex;
+}
+
+.dateStart,.dateEnd{
+    box-sizing: border-box;
+    margin:0 2vw 0 0;
+    width:10vw;
+    flex:content;
+}
+
+.delBtn{
+    margin-right:12vw;
 }

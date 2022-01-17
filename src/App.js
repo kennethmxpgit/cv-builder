@@ -19,7 +19,9 @@ function App() {
         </div>
       </div>
       <div id='footer'>
-        <p>Copyright 2021 @kennethmxpgit</p>
+        <p>
+          <a href='https://github.com/kennethmxpgit/cv-builder'>&copy; Copyright 2021 kennethmxp</a>
+        </p>
         </div>
     </div>
     
