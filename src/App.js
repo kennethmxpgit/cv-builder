@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Edit from './Components/Edit';
+import Preview from './Components/Preview';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div id='header'>
+        <p>CV Builder</p>
+        </div>
+      <div id='content'>
+        <div id='edit'>
+          <Edit/>
+        </div>
+        <div id='preview'>
+          <Preview/>
+        </div>
+      </div>
+      <div id='footer'>
+        <p>Copyright 2021 @kennethmxpgit</p>
+        </div>
     </div>
+    
   );
 }
 

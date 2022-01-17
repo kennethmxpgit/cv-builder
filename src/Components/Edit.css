@@ -1,0 +1,15 @@
+.bigLabel, .label{
+    margin-left:2rem;
+}
+
+.bigLabel{
+    font-size:2.3rem;
+}
+.label{
+
+}
+
+input{
+    margin-left:2rem;
+    width:40vw;
+}
