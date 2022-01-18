@@ -1,10 +1,32 @@
 #preview{
     display:flex;
     flex-direction: column;
+    height:90vh;
+}
+
+h1{
+    font-size:1.25rem;
+    color:white;
+    margin:7% 7% 0 7%;
+}
+
+h2{
+    font-size:1.1rem;
+    margin:0% 7% 0 2%;
+}
+.t1.tSidebar h2{
+    color:white;
+    margin-top:7%;
+    margin-left:7%;
+}
+.t1.tSidebar div{
+    font-size:0.5rem;
+    margin-left:7%;
 }
 
 #paperContainer{
-    height:100%;
+    height:90vw;
+    background-color:grey;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -17,4 +39,37 @@
     width:auto;
     aspect-ratio: 210/297;
     background-color: white;
+    margin:auto;  
+}
+
+.t1.tContainer{
+    box-sizing: border-box;
+    display:flex;
+}
+
+.t1.tSidebar{
+    background: cadetblue;
+    height:35rem;
+    width: 35%;
+}
+
+.t1.tContent{
+    box-sizing: border-box;
+    width:65%;
+    padding:2%;
+}
+
+.t1.tContent div{
+    margin-left:2%;
+    font-size:0.7rem;
+    margin-right:2%;
+}
+
+.t1.desc{
+    font-style:italic;
+}
+
+.t1.tContent h2{
+    margin-top:2%;
+    margin-bottom:2%;
 }

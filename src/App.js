@@ -61,8 +61,6 @@ onChangeUpdate(){
         phone:document.querySelector('#phone').value,
         education:eduArr,
         work:workArr,
-    },()=>{
-      console.log(this.state.name);
     })
     
 }
@@ -102,10 +100,11 @@ addEdu(){
   groupBox.appendChild(dateContainer);
   const dateStart=document.createElement('input');
   dateStart.classList.add('dateStart');
-  dateStart.setAttribute('type','date');
+  dateStart.setAttribute('type','month');
   dateContainer.appendChild(dateStart);
   const dateEnd=document.createElement('input');
   dateEnd.classList.add('dateEnd');
+  dateEnd.setAttribute('type','month');
   dateContainer.appendChild(dateEnd);
 
   //delete button
@@ -170,8 +169,10 @@ addWork(){
   const dateStart=document.createElement('input');
   dateStart.classList.add('dateStart');
   dateContainer.appendChild(dateStart);
+  dateStart.setAttribute('type','month');
   const dateEnd=document.createElement('input');
   dateEnd.classList.add('dateEnd');
+  dateEnd.setAttribute('type','month');
   dateContainer.appendChild(dateEnd);
 
   //delete button
@@ -189,6 +190,41 @@ addWork(){
 }
 
   render(){
+    let fakeData={
+      name:'Samantha Dawkins',
+      email:'samanthadawkins@gmail.com',
+      phone:'312-452-3948',
+      education:[
+          {
+              compName:'Cornell University',
+              title:'Master in Software Engineering',
+              start:'2016-2',
+              end:'2018-1',
+          },
+          {
+              compName:'University of Michigan',
+              title:'Bachelor of Software Engineering',
+              start:'2012-4',
+              end:'2016-3',
+          }
+      ],
+      work:[
+          {
+              compName:'Meta Platforms, Inc',
+              title:'Software Engineer',
+              jobdesc:'Analyze and modify existing software as well as design, construct and test end-user applications to meet user needs',
+              start:'2021-11',
+              end:'2020-12',
+          },
+          {
+              compName:'Google Inc',
+              title:'Data Scientist',
+              jobdesc:'Analyze, process, and model data then interpret the results to create actionable plans for the company',
+              start:'2020-3',
+              end:'2018-5',
+          }
+      ]
+    }
     return(
       <div>
       <div id='header'>
